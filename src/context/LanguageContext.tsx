@@ -134,7 +134,7 @@ const translations = {
     "footer.cookies": "سياسة ملفات تعريف الارتباط",
   },
   de: {
-    // Common
+    // Common عدل بعد هذا السطر مشن اللغة الالمانية
     "site.name": "NachhilfeLight",
     "nav.home": "Startseite",
     "nav.courses": "Kurse",
