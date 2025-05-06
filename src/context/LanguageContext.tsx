@@ -145,8 +145,8 @@ const translations = {
     "cta": "Loslegen",
 
     // Hero Section
-    "hero.subtitle": " Individuelle Lernförderung in Mathe, Deutsch, Englisch & mehr – mehrsprachig, zuverlässig, 100 % kostenlos mit Förderung. ",
-    "hero.title": "👋NachhilfeLight – Kostenlose Nachhilfe für Schüler*innen.",
+    "hero.subtitle": "  Individuelle Lernförderung in Mathe, Deutsch, Englisch & mehr – mehrsprachig, zuverlässig, 100 % kostenlos mit Förderung. ",
+    "hero.title": "👋 👋 Willkommen bei NachhilfeLight – kostenlose Nachhilfe für Schüler!",
     "hero.search.placeholder": "Was möchtest du heute lernen?",
     "hero.search.button": "Suchen",
     "hero.popular": "Beliebt: Mathematik, Wissenschaft & Malerei, Marketing, Animation, Soziale Medien",
