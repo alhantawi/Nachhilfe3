@@ -8,7 +8,8 @@ export function Logo({ className = "" }: { className?: string }) {
     <Link href="/" className={`flex items-center ${className}`}>
       <div className="relative w-[160px] h-[50px]">
         <Image
-          src="/logo-light.png" // <- deinen Dateinamen hier anpassen!
+          src="/logo-light.svg"
+ // <- deinen Dateinamen hier anpassen!
           alt="Nachhilfe Light Logo"
           fill
           className="object-contain"
