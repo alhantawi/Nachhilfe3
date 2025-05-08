@@ -24,7 +24,7 @@ const translations = {
 
     // Hero Section
     "hero.title": "🎓  Nachhilfe, die wirklich hilft – individuell, verständlich.“",
-    "hero.subtitle": "Unlock your potential, gain valuable knowledge, and grow your business with our wide range of courses.",
+    "hero.subtitle": "Wir bieten kostenlose, staatlich anerkannte Nachhilfe (NachhilfeLight) – mit pädagogischer Erfahrung und offizieller Genehmigung vom Jobcenter.",
     "hero.search.placeholder": "What do you want to learn today?",
     "hero.search.button": "Search",
     "hero.popular": "Popular: Math, Science & Painting, Marketing, Animation, Social Media",
@@ -38,7 +38,7 @@ const translations = {
     "courses.subtitle": "Whether you're a beginner or looking to advance your skills, our courses meet you where you are. Browse through these popular courses to find what appeals to you.",
 
     // Stats Section
-    "stats.title": "Your Path to Professional Growth Starts Here!",
+    "stats.title": "✨Your Path to Professional Growth Starts Here!",
     "stats.subtitle": "Explore our curated selection of courses created to enhance your capabilities and accelerate your career. With NachhilfeLight, you gain relevant expertise, develop in-demand skills, gain industry recognition, or build an online business.",
     "stats.students": "Active Students",
     "stats.tutors": "Expert Tutors",
@@ -84,7 +84,7 @@ const translations = {
     "cta": "ابدأ التعلم",
 
     // Hero Section
-    "hero.title": "احصل على مئات الدورات المتاحة",
+    "hero.title": "هل طفلك بحاجة إلى دعم دراسي و دروس اضافية و خصوصية؟",
     "hero.subtitle": "أطلق العنان لإمكاناتك، واكتسب معرفة قيمة، ونمِّ عملك من خلال مجموعة واسعة من الدورات.",
     "hero.search.placeholder": "ماذا تريد أن تتعلم اليوم؟",
     "hero.search.button": "بحث",
@@ -146,7 +146,7 @@ const translations = {
 
     // Hero Section
     "hero.subtitle": "  Individuelle Lernförderung in Mathe, Deutsch, Englisch & mehr – mehrsprachig, zuverlässig, 100 % kostenlos mit Förderung. ",
-    "hero.title": "👋 👋 Willkommen bei NachhilfeLight – kostenlose Nachhilfe für Schüler!",
+    "hero.title": "Willkommen bei NachhilfeLight – kostenlose Nachhilfe für Schüler!",
     "hero.search.placeholder": "Was möchtest du heute lernen?",
     "hero.search.button": "Suchen",
     "hero.popular": "Beliebt: Mathematik, Wissenschaft & Malerei, Marketing, Animation, Soziale Medien",
