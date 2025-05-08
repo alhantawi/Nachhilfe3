@@ -17,8 +17,8 @@ export function Navbar() {
   };
 
   return (
-    <header className="sticky top-0 z-50 w-full bg-primary py-4 shadow-lg">
-      <div className="container flex items-center justify-between">
+    <header className="sticky top-0 z-50 w-full bg-primary py-2 shadow-lg">
+      <div className="container flex items-center justify-between h-16">
         <div className="flex items-center gap-10">
           <Logo />
           <nav className="hidden md:flex items-center gap-6">
