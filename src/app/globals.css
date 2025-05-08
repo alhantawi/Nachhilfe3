@@ -164,12 +164,12 @@ layer(base);
     --popover-foreground: 222.2 84% 4.9%;
 
     /* Main blue color for primary (like the background) */
-    --primary: 225 100% 55%;
-    --primary-foreground: 210 40% 98%;
+    --primary: 188 45% 78%;
+    --primary-foreground: 0 0% 0%;
 
     /* Yellow accent color */
     --accent: 60 100% 55%;
-    --accent-foreground: 222.2 47.4% 11.2%;
+    --accent-foreground: 0 0% 0%;
 
     --secondary: 210 40% 96.1%;
     --secondary-foreground: 222.2 47.4% 11.2%;
@@ -222,6 +222,20 @@ layer(base);
   }
   body {
     @apply bg-background text-foreground;
+  }
+
+  /* Animations */
+  @keyframes float {
+    0%, 100% {
+      transform: translateY(0) rotate(0deg);
+    }
+    50% {
+      transform: translateY(-20px) rotate(5deg);
+    }
+  }
+
+  .animate-float {
+    animation: float 6s ease-in-out infinite;
   }
 
   /* Arabic fonts */
