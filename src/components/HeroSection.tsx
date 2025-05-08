@@ -5,18 +5,38 @@ import { Input } from "./ui/input";
 import Image from "next/image";
 import { useLanguage } from "@/context/LanguageContext";
 import { Search } from "lucide-react";
+import avatar from "../public/avatar.png"
 
 export function HeroSection() {
   const { t, language } = useLanguage();
 
   return (
     <section className="relative w-full overflow-hidden bg-primary py-24">
-      {/* Decorative geometric shapes */}
-      <div className="absolute top-0 left-0 h-36 w-36 bg-accent rounded-full opacity-40 -translate-x-1/2 -translate-y-1/2" />
-      <div className="absolute right-10 bottom-24 h-24 w-24 bg-accent rounded-full opacity-30" />
-      <div className="absolute right-48 top-20 h-16 w-16 border-4 border-accent opacity-50 transform rotate-12" />
-      <div className="absolute left-1/4 bottom-10 h-12 w-3 bg-white opacity-30 transform rotate-45" />
-      <div className="absolute right-1/3 top-1/4 h-8 w-8 border-4 border-white opacity-20 transform -rotate-12 rounded-full" />
+      {/* Modern geometric patterns */}
+      <div className="absolute inset-0 overflow-hidden">
+        {/* Diagonal gradient flow */}
+        <div className="absolute top-0 left-0 h-[500px] w-[500px] bg-accent/20 rounded-full blur-3xl animate-pulse" />
+        <div className="absolute bottom-0 right-0 h-[500px] w-[500px] bg-accent/20 rounded-full blur-3xl animate-pulse delay-1000" />
+        
+        {/* Top-left to bottom-right geometric shapes */}
+        <div className="absolute top-[10%] left-[10%] h-40 w-40 border-4 border-accent/30 rounded-lg rotate-45 animate-float" />
+        <div className="absolute top-[25%] left-[25%] h-32 w-32 bg-accent/20 rounded-full animate-float delay-300" />
+        <div className="absolute top-[40%] left-[40%] h-24 w-24 border-2 border-white/20 rounded-lg rotate-12 animate-float delay-600" />
+        <div className="absolute top-[55%] left-[55%] h-32 w-32 border-4 border-accent/30 rounded-lg rotate-45 animate-float delay-200" />
+        <div className="absolute top-[70%] left-[70%] h-24 w-24 bg-accent/20 rounded-full animate-float delay-500" />
+        <div className="absolute top-[85%] left-[85%] h-16 w-16 border-2 border-white/20 rounded-lg rotate-12 animate-float delay-800" />
+        
+        {/* Grid pattern */}
+        <div className="absolute inset-0 bg-[linear-gradient(to_right,#ffffff10_1px,transparent_1px),linear-gradient(to_bottom,#ffffff10_1px,transparent_1px)] bg-[size:4rem_4rem]" />
+        
+        {/* Diagonal floating dots */}
+        <div className="absolute top-[15%] left-[15%] w-3 h-3 bg-accent/40 rounded-full animate-float" />
+        <div className="absolute top-[30%] left-[30%] w-2 h-2 bg-accent/30 rounded-full animate-float delay-300" />
+        <div className="absolute top-[45%] left-[45%] w-4 h-4 bg-accent/20 rounded-full animate-float delay-600" />
+        <div className="absolute top-[60%] left-[60%] w-3 h-3 bg-accent/40 rounded-full animate-float delay-200" />
+        <div className="absolute top-[75%] left-[75%] w-2 h-2 bg-accent/30 rounded-full animate-float delay-500" />
+        <div className="absolute top-[90%] left-[90%] w-4 h-4 bg-accent/20 rounded-full animate-float delay-800" />
+      </div>
 
       {/* Content */}
       <div className="container relative z-10">
@@ -53,7 +73,7 @@ export function HeroSection() {
               <Button 
                 variant="default" 
                 size="lg" 
-                className="bg-accent hover:bg-accent/90 text-primary font-medium px-8 rounded-full cursor-pointer hover:scale-105 transition-all"
+                className="bg-accent hover:bg-accent/90 text-black font-medium px-8 rounded-full cursor-pointer hover:scale-105 transition-all"
               >
                 {t("cta.start")}
               </Button>
@@ -82,11 +102,11 @@ export function HeroSection() {
               
               <div className="overflow-hidden rounded-xl mb-4">
                 <Image
-                  src="https://images.unsplash.com/photo-1633332755192-727a05c4013d?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+                  src={avatar}
                   alt="Student with laptop"
                   width={400}
                   height={400}
-                  className="rounded-xl mb-4 object-cover w-full hover:scale-105 transition-transform duration-500"
+                  className="rounded-xl mb-4 object-contain w-full h-auto hover:scale-105 transition-transform duration-500"
                 />
               </div>
               
