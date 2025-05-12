@@ -23,7 +23,7 @@ const translations = {
     "cta": "Get Started",
 
     // Hero Section
-    "hero.title": "🎓  Nachhilfe, die wirklich hilft – individuell, verständlich.“",
+    "hero.title": "Free school tutoring – trusted, clear, multilingual.",
     "hero.subtitle": "Wir bieten kostenlose, staatlich anerkannte Nachhilfe (NachhilfeLight) – mit pädagogischer Erfahrung und offizieller Genehmigung vom Jobcenter.",
     "hero.search.placeholder": "What do you want to learn today?",
     "hero.search.button": "Search",
