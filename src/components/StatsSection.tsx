@@ -28,15 +28,15 @@ export function StatsSection() {
 
             <div className="grid grid-cols-3 gap-8 mb-10">
               <div className="text-center">
-                <div className="text-4xl font-bold text-accent mb-2">50+</div>
+                <div className="text-4xl font-bold text-accent mb-2">12+</div>
                 <div className="text-white/70 text-sm">{t("stats.students")}</div>
               </div>
               <div className="text-center">
-                <div className="text-4xl font-bold text-accent mb-2">70+</div>
+                <div className="text-4xl font-bold text-accent mb-2">3+</div>
                 <div className="text-white/70 text-sm">{t("stats.tutors")}</div>
               </div>
               <div className="text-center">
-                <div className="text-4xl font-bold text-accent mb-2">15+</div>
+                <div className="text-4xl font-bold text-accent mb-2">4+</div>
                 <div className="text-white/70 text-sm">{t("stats.topics")}</div>
               </div>
             </div>
