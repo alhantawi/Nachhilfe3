@@ -82,7 +82,7 @@ export function HeroSection() {
                 variant="outline" 
                 size="lg" 
                 className="border-white/30 text-black hover:text-white cursor-pointer hover:bg-white/10 rounded-full"
-              > <a href="mailto:example@example.com?subject=Becoming an Instructor">
+              > <a href="mailto:alhantawi@nachhilfelight.de?subject=Becoming an Instructor">
                 {t("cta.become")}
                 </a>
               </Button>
