@@ -48,9 +48,9 @@ const translations = {
     // Features Section
     "features.title": "Support your child’s learning with NachhilfeLight",
     "features.subtitle": "We offer free, trusted tutoring for school students – clear, personal and flexible.",
-    "features.create.title": "Create & Manage Courses Easily.",
-    "features.create.subtitle": "NachhilfeLight makes it efficient for instructors to create, distribute, and manage interactive content. Launch your first course today!",
-    "features.join": "Join as Creator",
+    "features.create.title": " Learning starts with trust – tutoring that fits your child.",
+    "features.create.subtitle": "At NachhilfeLight, students get personal academic support – at home, online, or in school. We guide your child step by step – with patience, experience and multilingual support.",
+    "features.join": "Get started for free",
 
     // Testimonials Section
     "testimonials.title": "Discover What Our Community is Saying",
