@@ -160,8 +160,8 @@ const translations = {
     "courses.subtitle": "Ob Anfänger oder auf der Suche nach Fortschritten - unsere Kurse passen sich deinem Niveau an. Durchstöbere diese beliebten Kurse, um zu finden, was dich anspricht.",
 
     // Stats Section
-    "stats.title": "Dein Weg zur beruflichen Entwicklung beginnt hier!",
-    "stats.subtitle": "Entdecke unsere sorgfältig ausgewählten Kurse, die entwickelt wurden, um deine Fähigkeiten zu verbessern und deine Karriere zu beschleunigen. Mit NachhilfeLight gewinnst du relevante Expertise, entwickelst gefragte Fähigkeiten, erhältst Branchenanerkennung oder baust ein Online-Geschäft auf.",
+    "stats.title": "Mehr Bildung. Mehr Chancen. Mehr Zukunft.",
+    "stats.subtitle": "NachhilfeLight bietet kostenlose, staatlich geförderte Nachhilfe für Schüler*innen. Wir helfen bei Mathe, Deutsch, Englisch, Naturwissenschaften und mehr – individuell, geduldig und auf Augenhöhe. 📍 Unterricht online, zu Hause oder in der Schule 🗣️ Betreuung auch auf Arabisch, Türkisch, Russisch, Englisch 💡 Antragshilfe beim Jobcenter inklusive",
     "stats.students": "Aktive Studenten",
     "stats.tutors": "Experten-Tutoren",
     "stats.topics": "Kursthemen",
