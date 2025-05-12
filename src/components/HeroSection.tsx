@@ -74,7 +74,7 @@ export function HeroSection() {
                 variant="default" 
                 size="lg" 
                 className="bg-accent hover:bg-accent/90 text-black font-medium px-8 rounded-full cursor-pointer hover:scale-105 transition-all"
-              > <a href="https://wa.me/+497139423991" target="_blank" rel="noopener noreferrer">
+              > <a href="https://wa.me/+4917684711406" target="_blank" rel="noopener noreferrer">
                 {t("cta.start")} </a>
               </Button>
               
