@@ -168,8 +168,8 @@ const translations = {
     "stats.learnmore": "Mehr erfahren",
 
     // Features Section
-    "features.title": "Entfalte dein Potenzial als Ersteller mit NachhilfeLight",
-    "features.subtitle": "Erlebe die Kombination aus zusammenhängenden Kursen, die Erfolgsmuster fördern. Erkunde neue Fähigkeiten und verbinde dich mit einer Gemeinschaft von Erstellern wie dir.",
+    "features.title": "Entfalte das Potenzial deines Kindes mit NachhilfeLight",
+    "features.subtitle": "Erlebe gezielte Nachhilfe, die wirkt – kostenlos, verständlich und professionell. So unterstützen wir:",
     "features.create.title": "Kurse einfach erstellen & verwalten.",
     "features.create.subtitle": "NachhilfeLight macht es Dozenten leicht, interaktive Inhalte zu erstellen, zu verteilen und zu verwalten. Starte noch heute deinen ersten Kurs!",
     "features.join": "Als Ersteller beitreten",
