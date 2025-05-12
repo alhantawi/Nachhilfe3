@@ -46,8 +46,8 @@ const translations = {
     "stats.learnmore": "Learn More",
 
     // Features Section
-    "features.title": "Unlock Your Potential as a Creator with NachhilfeLight",
-    "features.subtitle": "Experience the combination of cohesive courses that are elevating patterns of success. Explore new skills and connect with a community of creators like yourself.",
+    "features.title": "Support your child’s learning with NachhilfeLight",
+    "features.subtitle": "We offer free, trusted tutoring for school students – clear, personal and flexible.",
     "features.create.title": "Create & Manage Courses Easily.",
     "features.create.subtitle": "NachhilfeLight makes it efficient for instructors to create, distribute, and manage interactive content. Launch your first course today!",
     "features.join": "Join as Creator",
