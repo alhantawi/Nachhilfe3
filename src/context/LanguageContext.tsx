@@ -39,12 +39,7 @@ const translations = {
 
     // Stats Section
     "stats.title": "Education opens doors – NachhilfeLight makes it accessible",
-    "stats.subtitle": "We provide free tutoring supported by the German government
-for students who need help in school.
-
-📍 Lessons online, at home or in school
-🗣️ Support available in Arabic, Turkish, Russian, English, and German
-✅ Help with BuT application (Jobcenter)",
+    "stats.subtitle": "We provide free tutoring supported by the German government for students who need help in school.",
     "stats.students": "Active Students",
     "stats.tutors": "Expert Tutors",
     "stats.topics": "Course Topics",
