@@ -24,7 +24,7 @@ const translations = {
 
     // Hero Section
     "hero.title": "Free school tutoring – trusted, clear, multilingual.",
-    "hero.subtitle": "Wir bieten kostenlose, staatlich anerkannte Nachhilfe (NachhilfeLight) – mit pädagogischer Erfahrung und offizieller Genehmigung vom Jobcenter.",
+    "hero.subtitle": "NachhilfeLight offers government-supported tutoring for students in math, languages, and science – online or in-person.",
     "hero.search.placeholder": "What do you want to learn today?",
     "hero.search.button": "Search",
     "hero.popular": "Popular: Math, Science & Painting, Marketing, Animation, Social Media",
@@ -38,8 +38,13 @@ const translations = {
     "courses.subtitle": "Whether you're a beginner or looking to advance your skills, our courses meet you where you are. Browse through these popular courses to find what appeals to you.",
 
     // Stats Section
-    "stats.title": "✨Your Path to Professional Growth Starts Here!",
-    "stats.subtitle": "Explore our curated selection of courses created to enhance your capabilities and accelerate your career. With NachhilfeLight, you gain relevant expertise, develop in-demand skills, gain industry recognition, or build an online business.",
+    "stats.title": "Education opens doors – NachhilfeLight makes it accessible",
+    "stats.subtitle": "We provide free tutoring supported by the German government
+for students who need help in school.
+
+📍 Lessons online, at home or in school
+🗣️ Support available in Arabic, Turkish, Russian, English, and German
+✅ Help with BuT application (Jobcenter)",
     "stats.students": "Active Students",
     "stats.tutors": "Expert Tutors",
     "stats.topics": "Course Topics",
