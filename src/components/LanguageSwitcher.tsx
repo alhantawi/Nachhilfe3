@@ -57,22 +57,22 @@ export function LanguageSwitcher() {
             onClick={() => selectLanguage("en")}
             className="w-full px-4 py-2 flex justify-between items-center text-left hover:bg-yellow-100 transition-colors cursor-pointer"
           >
+            {language === "en" && <Check size={16} className="text-green-700" />}
             <span>English</span>
-            {language === "en" && <Check size={16} className="text-primary" />}
           </button>
           <button
             onClick={() => selectLanguage("de")}
             className="w-full px-4 py-2 flex justify-between items-center text-left hover:bg-yellow-100 transition-colors cursor-pointer"
           >
+            {language === "de" && <Check size={16} className="text-green-700" />}
             <span>Deutsch</span>
-            {language === "de" && <Check size={16} className="text-primary" />}
           </button>
           <button
             onClick={() => selectLanguage("ar")}
             className="w-full px-4 py-2 flex justify-between items-center text-left hover:bg-yellow-100 transition-colors cursor-pointer"
           >
             <span>العربية</span>
-            {language === "ar" && <Check size={16} className="text-primary" />}
+            {language === "ar" && <Check size={16} className="text-green-700" />}
           </button>
         </div>
       )}

@@ -1,12 +1,10 @@
-import { CategoriesSection } from "@/components/CategoriesSection";
-import { CoursesSection } from "@/components/CoursesSection";
-import { CTASection } from "@/components/CTASection";
-import { FeaturesSection } from "@/components/FeaturesSection";
-import { Footer } from "@/components/Footer";
-import { HeroSection } from "@/components/HeroSection";
-import { Navbar } from "@/components/Navbar";
+import Navbar from "@/components/layout/Navbar";
+import Footer from "@/components/layout/Footer";
+
+import HeroSection from "@/components/HeroSection";
 import { StatsSection } from "@/components/StatsSection";
-import { TestimonialsSection } from "@/components/TestimonialsSection";
+import FeaturesSection from "@/components/FeaturesSection";
+import { CTASection } from "@/components/CTASection";
 
 export default function Home() {
   return (
@@ -18,7 +16,7 @@ export default function Home() {
         {/* <CoursesSection /> */}
         <StatsSection />
         <FeaturesSection />
-      {/*  <TestimonialsSection /> */}
+        {/*  <TestimonialsSection /> */}
         <CTASection />
       </main>
       <Footer />

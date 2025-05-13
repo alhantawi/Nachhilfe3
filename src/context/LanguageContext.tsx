@@ -182,7 +182,7 @@ const translations = {
     "cta.title": "Entfalte dein Potenzial als Ersteller mit NachhilfeLight",
     "cta.subtitle": "Erlebe die Zusammenarbeit von zusammenhängenden Erstellern, die Erfolgsmuster fördern. Registriere dich jetzt, um unserer Plattform beizutreten und heute deine Lernreise zu beginnen.",
     "cta.start": "Beginne heute zu lernen",
-    "cta.become": "send uns E-Mail ✉️",
+    "cta.become": "Send uns E-Mail ✉️",
 
     // Footer
     "footer.about": "NachhilfeLight ist die führende Plattform für Online-Bildung und bietet Hunderte von Kursen in verschiedenen Fächern an, um dir bei deiner beruflichen und persönlichen Entwicklung zu helfen.",

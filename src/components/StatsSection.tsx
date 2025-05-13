@@ -2,7 +2,6 @@
 
 import Image from "next/image";
 import { Button } from "./ui/button";
-import hannover from "../public/hannover1.jpg"
 import { useLanguage } from "@/context/LanguageContext";
 
 
@@ -41,7 +40,7 @@ export function StatsSection() {
               </div>
             </div>
 
-            <Button className="bg-accent text-primary hover:bg-accent/90 font-semibold px-8 py-6">
+            <Button className="bg-accent text-black hover:bg-accent/90 font-semibold px-8 py-6 cursor-pointer hover:scale-105 transition-all">
               {t("stats.learnmore")}
             </Button>
           </div>
@@ -52,7 +51,7 @@ export function StatsSection() {
                 ❤️
               </div>
               <Image
-                src={hannover}
+                src="/hannover1.jpg"
                 alt="Student learning"
                 width={700}
                 height={350}
