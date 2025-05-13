@@ -3,10 +3,25 @@ import { Geist } from "next/font/google";
 import "./globals.css";
 import ClientBody from "./ClientBody";
 import { LanguageProvider } from "@/context/LanguageContext";
+import { Poppins, Cairo } from "next/font/google";
 
 const geist = Geist({
   subsets: ["latin"],
   variable: "--font-geist",
+  display: "swap",
+});
+
+const poppins = Poppins({
+  subsets: ["latin"],
+  weight: "400",
+  variable: "--font-poppins",
+  display: "swap",
+});
+
+const cairo = Cairo({
+  subsets: ["latin", "arabic"],
+  weight: ["400", "500", "600", "700"],
+  variable: "--font-cairo",
   display: "swap",
 });
 
@@ -24,10 +39,10 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className={`${geist.variable}`}>
-      <body suppressHydrationWarning className="antialiased">
+    <html lang="en" className={`${geist.variable} ${poppins.variable} ${cairo.variable}`}>
+      <body className="antialiased">
         <LanguageProvider>
-          <ClientBody>{children}</ClientBody>
+          {children}
         </LanguageProvider>
       </body>
     </html>
