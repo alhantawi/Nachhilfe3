@@ -2,6 +2,7 @@
 
 import { Button } from "./ui/button";
 import { useLanguage } from "@/context/LanguageContext";
+import Link from "next/link";
 
 export function CTASection() {
   const { t, language } = useLanguage();
@@ -23,20 +24,25 @@ export function CTASection() {
           </p>
 
           <div className={`flex flex-col sm:flex-row gap-4 justify-center ${language === "ar" ? "flex-row-reverse" : ""}`}>
-            <Button
-              variant="modern"
-              size="xl"
-              className="transform transition-all hover:translate-y-[-2px] active:translate-y-[1px] cursor-pointer"
-            >
-              {t("cta.start")}
-            </Button>
-            <Button
-              variant="outline"
-              size="xl"
-              className="text-black border-white hover:bg-white/10 hover:text-white cursor-pointer transform transition-all hover:translate-y-[-2px] active:translate-y-[1px]"
-            >
-              {t("cta.become")}
-            </Button>
+            <Link href="https://wa.me/+4917684711406" target="_blank" rel="noopener noreferrer">
+              <Button
+                variant="modern"
+                size="xl"
+                className="transform transition-all text-black hover:translate-y-[-2px] active:translate-y-[1px] cursor-pointer"
+              >
+                {t("cta.start")}
+              </Button>
+            </Link>
+
+            <Link href="mailto:alhantawi@nachhilfelight.de?subject=Anfrage Nachhilfe">
+              <Button
+                variant="outline"
+                size="xl"
+                className="text-black border-white hover:bg-white/10 cursor-pointer transform transition-all hover:translate-y-[-2px] active:translate-y-[1px]"
+              >
+                {t("cta.become")}
+              </Button>
+            </Link>
           </div>
         </div>
       </div>

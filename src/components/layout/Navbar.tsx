@@ -2,13 +2,13 @@
 
 import Link from "next/link";
 import { useLanguage } from "@/context/LanguageContext";
-import { Logo } from "./Logo";
-import { Button } from "./ui/button";
-import { LanguageSwitcher } from "./LanguageSwitcher";
+import { Logo } from "../Logo";
+import { Button } from "../ui/button";
+import { LanguageSwitcher } from "@/components/LanguageSwitcher";
 import { Menu, X } from "lucide-react";
 import { useState } from "react";
 
-export function Navbar() {
+export default function Navbar() {
   const { t } = useLanguage();
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
@@ -22,7 +22,7 @@ export function Navbar() {
         <div className="flex items-center gap-10">
           <Logo />
           <nav className="hidden md:flex items-center gap-6">
-            <Link href="/" className="text-sm font-medium text-white hover:text-accent transition-colors hover:scale-105">
+            <Link href="/" className="text-sm font-medium text-black hover:text-accent transition-colors hover:scale-105">
               {t("nav.home")}
             </Link>
             {/* <Link href="/courses" className="text-sm font-medium text-white hover:text-accent transition-colors hover:scale-105">
@@ -31,7 +31,7 @@ export function Navbar() {
             <Link href="/mentors" className="text-sm font-medium text-white hover:text-accent transition-colors hover:scale-105">
               {t("nav.mentors")}
             </Link> */}
-            <Link href="/contact" className="text-sm font-medium text-white hover:text-accent transition-colors hover:scale-105">
+            <Link href="mailto:alhantawi@nachhilfelight.de?subject=Anfrage Nachhilfe" className="text-sm font-medium text-black hover:text-accent transition-colors hover:scale-105">
               {t("nav.contact")}
             </Link>
           </nav>
@@ -55,8 +55,8 @@ export function Navbar() {
             </Link>
           </div> */}
 
-          <Link href="/signup">
-            <Button className="bg-accent text-primary hover:bg-accent/90 hover:scale-105 transition-all shadow-md hover:shadow-lg px-6 py-2 font-medium rounded-full cursor-pointer">
+          <Link href="https://wa.me/+4917684711406" target="_blank" rel="noopener noreferrer">
+            <Button className="bg-accent text-black hover:bg-accent/90 hover:scale-105 transition-all shadow-md hover:shadow-lg px-6 py-2 font-medium rounded-full cursor-pointer">
               {t("cta")}
             </Button>
           </Link>

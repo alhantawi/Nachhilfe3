@@ -1,9 +1,9 @@
 "use client";
 
 import Link from "next/link";
-import { Logo } from "./Logo";
+import { Logo } from "../Logo";
 
-export function Footer() {
+export default function Footer() {
   const year = new Date().getFullYear();
 
   const quickLinks = [

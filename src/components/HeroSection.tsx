@@ -1,13 +1,15 @@
 "use client";
 
+import Link from "next/link";
+import { Search } from "lucide-react";
+
+import { useLanguage } from "@/context/LanguageContext";
+
 import { Button } from "./ui/button";
 import { Input } from "./ui/input";
 import Image from "next/image";
-import { useLanguage } from "@/context/LanguageContext";
-import { Search } from "lucide-react";
-import avatar from "../public/avatar.png"
 
-export function HeroSection() {
+export default function HeroSection() {
   const { t, language } = useLanguage();
 
   return (
@@ -17,7 +19,7 @@ export function HeroSection() {
         {/* Diagonal gradient flow */}
         <div className="absolute top-0 left-0 h-[500px] w-[500px] bg-accent/20 rounded-full blur-3xl animate-pulse" />
         <div className="absolute bottom-0 right-0 h-[500px] w-[500px] bg-accent/20 rounded-full blur-3xl animate-pulse delay-1000" />
-        
+
         {/* Top-left to bottom-right geometric shapes */}
         <div className="absolute top-[10%] left-[10%] h-40 w-40 border-4 border-accent/30 rounded-lg rotate-45 animate-float" />
         <div className="absolute top-[25%] left-[25%] h-32 w-32 bg-accent/20 rounded-full animate-float delay-300" />
@@ -25,10 +27,10 @@ export function HeroSection() {
         <div className="absolute top-[55%] left-[55%] h-32 w-32 border-4 border-accent/30 rounded-lg rotate-45 animate-float delay-200" />
         <div className="absolute top-[70%] left-[70%] h-24 w-24 bg-accent/20 rounded-full animate-float delay-500" />
         <div className="absolute top-[85%] left-[85%] h-16 w-16 border-2 border-white/20 rounded-lg rotate-12 animate-float delay-800" />
-        
+
         {/* Grid pattern */}
         <div className="absolute inset-0 bg-[linear-gradient(to_right,#ffffff10_1px,transparent_1px),linear-gradient(to_bottom,#ffffff10_1px,transparent_1px)] bg-[size:4rem_4rem]" />
-        
+
         {/* Diagonal floating dots */}
         <div className="absolute top-[15%] left-[15%] w-3 h-3 bg-accent/40 rounded-full animate-float" />
         <div className="absolute top-[30%] left-[30%] w-2 h-2 bg-accent/30 rounded-full animate-float delay-300" />
@@ -45,11 +47,11 @@ export function HeroSection() {
             <div className="inline-block px-4 py-1 bg-accent/20 backdrop-blur-sm rounded-full mb-5">
               <span className="text-accent text-sm font-medium">NachhilfeLight - {t("nav.courses")}</span>
             </div>
-            
+
             <h1 className="text-4xl md:text-5xl xl:text-6xl font-bold text-white mb-6 leading-tight">
               {t("hero.title")}
             </h1>
-            
+
             <p className="text-white/80 text-lg md:text-xl mb-8 max-w-xl">
               {t("hero.subtitle")}
             </p>
@@ -68,24 +70,27 @@ export function HeroSection() {
                 <Search size={18} />
               </Button>
             </div> */}
-            
+
             <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
-              <Button 
-                variant="default" 
-                size="lg" 
-                className="bg-accent hover:bg-accent/90 text-black font-medium px-8 rounded-full cursor-pointer hover:scale-105 transition-all"
-              > <a href="https://wa.me/+4917684711406" target="_blank" rel="noopener noreferrer">
-                {t("cta.start")} </a>
-              </Button>
-              
-              <Button 
-                variant="outline" 
-                size="lg" 
-                className="border-white/30 text-black hover:text-white cursor-pointer hover:bg-white/10 rounded-full"
-              > <a href="mailto:alhantawi@nachhilfelight.de?subject=Anfrage Nachhilfe ">
-                {t("cta.become")}
-                </a>
-              </Button>
+              <Link href="https://wa.me/+4917684711406" target="_blank" rel="noopener noreferrer">
+                <Button
+                  variant="default"
+                  size="lg"
+                  className="bg-accent/80 font-bold hover:bg-accent text-black tracking-wide font-bold px-8 rounded-full cursor-pointer hover:scale-105 transition-all"
+                >
+                  {t("cta.start")}
+                </Button>
+              </Link>
+
+              <Link href="mailto:alhantawi@nachhilfelight.de?subject=Anfrage Nachhilfe">
+                <Button
+                  variant="outline"
+                  size="lg"
+                  className="font-bold border-white/30 text-black hover:text-white cursor-pointer hover:text-black hover:bg-cyan-200 rounded-full"
+                >
+                  {t("cta.become")}
+                </Button>
+              </Link>
             </div>
 
             <div className="text-white/60 text-sm mt-6">
@@ -95,27 +100,27 @@ export function HeroSection() {
 
           <div className={`relative h-full flex justify-center items-center ${language === "ar" ? "lg:order-1" : ""}`}>
             <div className="absolute -z-10 w-80 h-80 bg-accent/20 rounded-full blur-3xl"></div>
-            
+
             <div className="relative bg-white/10 backdrop-blur-md rounded-2xl p-6 w-full max-w-md border border-white/20 shadow-xl transform transition-all hover:scale-[1.02] hover:shadow-2xl">
               <div className="absolute -top-4 -right-4 bg-accent text-primary font-bold px-4 py-2 rounded-lg shadow-lg">
-                <span className="animate-pulse">55% OFF</span>
+                <span className="animate-pulse text-black">55% OFF</span>
               </div>
-              
+
               <div className="overflow-hidden rounded-xl mb-4">
                 <Image
-                  src={avatar}
+                  src="/avatar.png"
                   alt="Student with laptop"
                   width={400}
                   height={400}
                   className="rounded-xl mb-4 object-contain w-full h-auto hover:scale-105 transition-transform duration-500"
                 />
               </div>
-              
+
               <div className="flex justify-between items-center mb-3">
                 <h3 className="text-white font-medium"> Tutorials</h3>
                 <span className="bg-white/20 text-white text-xs px-2 py-1 rounded-full">12 Lessons</span>
               </div>
-              
+
               <div className="flex items-center gap-2 mb-1">
                 <div className="flex">
                   {[1, 2, 3, 4, 5].map((star) => (
@@ -126,11 +131,11 @@ export function HeroSection() {
                 </div>
                 <span className="text-white/70 text-xs">4.9 (2.5k reviews)</span>
               </div>
-              
+
               <div className="relative w-full h-2 bg-white/20 rounded-full mb-4">
                 <div className="absolute left-0 top-0 h-full w-3/4 bg-accent rounded-full" />
               </div>
-              
+
               <div className="flex justify-between items-center">
                 <div className="flex items-center gap-2">
                   <div className="w-6 h-6 rounded-full bg-white/20 flex items-center justify-center">

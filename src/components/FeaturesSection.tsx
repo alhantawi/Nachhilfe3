@@ -1,7 +1,9 @@
 "use client";
 
-import { Button } from "./ui/button";
 import Image from "next/image";
+import Link from "next/link";
+
+import { Button } from "./ui/button";
 import { useLanguage } from "@/context/LanguageContext";
 
 const features = [
@@ -37,7 +39,7 @@ const features = [
   }
 ];
 
-export function FeaturesSection() {
+export default function FeaturesSection() {
   const { t, language } = useLanguage();
 
   return (
@@ -88,18 +90,19 @@ export function FeaturesSection() {
                   <div className="text-white">Analytics and Advanced Tools</div>
                 </div>
               </div>
-
-              <Button
-                className="mt-8 bg-accent text-primary hover:bg-accent/90 self-start btn-modern"
-                variant="accent"
-              >
-                {t("features.join")}
-              </Button>
+              <Link href="https://wa.me/+4917684711406" target="_blank" rel="noopener noreferrer">
+                <Button
+                  className="mt-8 bg-accent text-black hover:bg-accent/90 self-start btn-modern"
+                  variant="accent"
+                >
+                  {t("features.join")}
+                </Button>
+              </Link>
             </div>
 
             <div className="relative lg:h-auto flex items-center">
               <Image
-                src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?ixlib=rb-4.0.3&auto=format&fit=crop&w=1600&q=80"
+                src="/people2.avif"
                 alt="Course creators collaborating"
                 width={600}
                 height={400}
