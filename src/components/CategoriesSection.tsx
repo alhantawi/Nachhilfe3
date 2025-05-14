@@ -4,16 +4,7 @@ import { useState } from "react";
 import { Badge } from "./ui/badge";
 import { useLanguage } from "@/context/LanguageContext";
 
-const categories = [
-  { id: "all", name: "All" },
-  { id: "design", name: "Design" },
-  { id: "drawing", name: "Drawing & Painting" },
-  { id: "marketing", name: "Marketing" },
-  { id: "animation", name: "Animation" },
-  { id: "social", name: "Social Media" },
-  { id: "digital", name: "Digital Design" },
-  { id: "photo", name: "Photography" },
-];
+
 
 const skills = [
   { id: "digital-business", name: "Digital Business" },
