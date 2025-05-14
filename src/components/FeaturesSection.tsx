@@ -9,33 +9,33 @@ import { useLanguage } from "@/context/LanguageContext";
 const features = [
   {
     icon: "🎓",
-    title: "Grow Your Expertise",
-    description: "Access expert-led courses with practical and theoretical knowledge across various fields."
+    title: "Grundlagen verstehen",
+    description: "Wir erklären Mathe, Deutsch & Co. so, dass dein Kind wieder mitkommt – verständlich, schrittweise und geduldig."
   },
   {
     icon: "💼",
-    title: "Build a Community",
-    description: "Connect with like-minded learners, share insights, and grow your professional network."
+    title: "Selbstvertrauen stärken",
+    description: "Gute Nachhilfe ist mehr als gute Noten: Sie gibt Mut, Motivation und das Gefühl „Ich kann das!""
   },
   {
     icon: "🚀",
-    title: "Create Your Courses",
-    description: "Share your knowledge and earn by creating and selling your own courses."
+    title: "Lernen in der Sprache, die man versteht",
+    description: "Wir unterrichten bei Bedarf auf Arabisch, Russisch, Türkisch, Englisch oder Deutsch – für echte Klarheit."
   },
   {
     icon: "📊",
-    title: "Track Your Progress",
+    title: "Individuell & flexibel",
     description: "Monitor your learning journey with detailed analytics and achievement badges."
   },
   {
     icon: "🌟",
-    title: "Certification",
-    description: "Earn industry-recognized certificates to showcase your new skills."
+    title: " Schrittweise Erfolge dokumentieren",
+    description: "Wir begleiten den Lernprozess und geben den Eltern regelmäßig Rückmeldung-"
   },
   {
     icon: "💻",
-    title: "Anytime, Anywhere",
-    description: "Learn at your own pace with courses accessible on any device, anytime."
+    title: "Staatlich gefördert – komplett kostenlos",
+    description: "Wir helfen beim Antrag auf Lernförderung über das Bildungspaket (BuT) – schnell, unkompliziert und vollständig kostenlos."
   }
 ];
 
