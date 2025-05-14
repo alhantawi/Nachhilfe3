@@ -15,7 +15,7 @@ const features = [
   {
     icon: "💼",
     title: "Selbstvertrauen stärken",
-    description: "Gute Nachhilfe ist mehr als gute Noten: Sie gibt Mut, Motivation und das Gefühl „Ich kann das!""
+    description: "Gute Nachhilfe ist mehr als gute Noten: Sie gibt Mut, Motivation und das Gefühl „Ich kann das!"
   },
   {
     icon: "🚀",
