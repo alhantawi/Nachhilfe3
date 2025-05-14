@@ -25,7 +25,7 @@ const features = [
   {
     icon: "📊",
     title: "Individuell & flexibel",
-    description: "Monitor your learning journey with detailed analytics and achievement badges."
+    description: "Nachhilfe bei dir zu Hause, in der Schule oder online – wie es für euch am besten passt."
   },
   {
     icon: "🌟",
