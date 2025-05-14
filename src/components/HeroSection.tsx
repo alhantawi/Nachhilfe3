@@ -103,7 +103,7 @@ export default function HeroSection() {
 
             <div className="relative bg-white/10 backdrop-blur-md rounded-2xl p-6 w-full max-w-md border border-white/20 shadow-xl transform transition-all hover:scale-[1.02] hover:shadow-2xl">
               <div className="absolute -top-4 -right-4 bg-accent text-primary font-bold px-4 py-2 rounded-lg shadow-lg">
-                <span className="animate-pulse text-black">55%</span>
+                <span className="animate-pulse text-black">55% OFF</span>
               </div>
 
               <div className="overflow-hidden rounded-xl mb-4">
