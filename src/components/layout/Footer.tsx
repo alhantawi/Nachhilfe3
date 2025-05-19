@@ -1,33 +1,17 @@
 "use client";
 
 import Link from "next/link";
-import { Logo } from "../Logo";
+import { Logo } from "./Logo";
 
-export default function Footer() {
+export function Footer() {
   const year = new Date().getFullYear();
 
   const quickLinks = [
     { name: "Home", href: "/" },
     { name: "Courses", href: "/courses" },
     { name: "About Us", href: "/about" },
-    { name: "Pricing", href: "/pricing" },
-    { name: "Contact", href: "/contact" },
-  ];
-
-  const categories = [
-    { name: "Design", href: "/categories/design" },
-    { name: "Development", href: "/categories/development" },
-    { name: "Marketing", href: "/categories/marketing" },
-    { name: "Business", href: "/categories/business" },
-    { name: "Photography", href: "/categories/photography" },
-  ];
-
-  const resources = [
-    { name: "Blog", href: "/blog" },
-    { name: "Documentation", href: "/docs" },
-    { name: "Help Center", href: "/help" },
-    { name: "Community", href: "/community" },
-    { name: "Webinars", href: "/webinars" },
+    { name: "Impressum", href: "/Impressum" },
+    { name: "Contact", href: "/contact" }
   ];
 
   return (
@@ -75,32 +59,6 @@ export default function Footer() {
               ))}
             </ul>
           </div>
-
-          <div>
-            <h4 className="text-sm font-semibold uppercase text-gray-900 mb-4">Categories</h4>
-            <ul className="space-y-2">
-              {categories.map((category) => (
-                <li key={category.name}>
-                  <Link href={category.href} className="text-gray-600 hover:text-primary transition-colors">
-                    {category.name}
-                  </Link>
-                </li>
-              ))}
-            </ul>
-          </div>
-
-          <div>
-            <h4 className="text-sm font-semibold uppercase text-gray-900 mb-4">Resources</h4>
-            <ul className="space-y-2">
-              {resources.map((resource) => (
-                <li key={resource.name}>
-                  <Link href={resource.href} className="text-gray-600 hover:text-primary transition-colors">
-                    {resource.name}
-                  </Link>
-                </li>
-              ))}
-            </ul>
-          </div>
         </div>
 
         <div className="border-t border-gray-200 pt-8">
@@ -109,8 +67,8 @@ export default function Footer() {
               &copy; {year} NachhilfeLight. All rights reserved.
             </p>
             <div className="flex space-x-6">
-              <Link href="/terms" className="text-sm text-gray-500 hover:text-primary transition-colors">
-                Terms of Service
+              <Link href="/impressum" className="text-sm text-gray-500 hover:text-primary transition-colors">
+ Policy
               </Link>
               <Link href="/privacy" className="text-sm text-gray-500 hover:text-primary transition-colors">
                 Privacy Policy
