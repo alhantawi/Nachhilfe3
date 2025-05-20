@@ -1,9 +1,8 @@
 import type { Metadata } from "next";
-import { Geist } from "next/font/google";
 import "./globals.css";
 import ClientBody from "./ClientBody";
 import { LanguageProvider } from "@/context/LanguageContext";
-import { Poppins, Cairo } from "next/font/google";
+import { Poppins, Cairo, Geist } from "next/font/google";
 
 const geist = Geist({
   subsets: ["latin"],
