@@ -23,29 +23,7 @@ export function Footer() {
               <Logo className="text-primary" />
             </div>
             <p className="text-gray-600 mb-6 max-w-md">
-              NachhilfeLight is the leading platform for online education, offering hundreds of courses in various subjects to help you grow professionally and personally. Impressum
-Angaben gemäß § 5 TMG
-
-Mustafa Alhantawi
-NachhilfeLight – Anbieter für Lernförderung
-Podbielskistraße 274
-30655 Hannover
-Deutschland
-
-📞 Telefon: 0176 84711406
-✉️ E-Mail: info@nachhilfeleight.de
-🌐 Web: www.nachhilfelight.de
-
-Zugelassen als Nachhilfeanbieter über:
-– Region Hannover
-
-
-Inhaltlich verantwortlich gemäß § 55 Abs. 2 RStV:
-Mustafa Alhantawi
-Adresse wie oben
-
-Rechtsform: Freiberuflicher Einzelanbieter
-Umsatzsteuer-ID: Nicht erforderlich gemäß § 19 UStG (Kleinunternehmerregelung)
+              NachhilfeLight is the leading platform for online education, offering hundreds of courses in various subjects to help you grow professionally and personally. Impressum Angaben gemäß § 5 TMG Mustafa Alhantawi NachhilfeLight – Anbieter für Lernförderung Podbielskistraße 274 30655 Hannover Deutschland 📞 Telefon: 0176 84711406 ✉️ E-Mail: info@nachhilfeleight.de🌐 Web: www.nachhilfelight.de Zugelassen als Nachhilfeanbieter über: – Region Hannover Inhaltlich verantwortlich gemäß § 55 Abs. 2 RStV:Mustafa AlhantawiAdresse wie obenRechtsform: Freiberuflicher Einzelanbieter Umsatzsteuer-ID: Nicht erforderlich gemäß § 19 UStG (Kleinunternehmerregelung).
             </p>
             <div className="flex space-x-4">
               <Link href="#" className="text-gray-500 hover:text-primary transition-colors">
