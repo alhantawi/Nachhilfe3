@@ -37,13 +37,17 @@ export function CategoriesSection() {
 
         {/* Categories Tabs */}
         <div className={`flex flex-wrap justify-center gap-3 mb-12 ${language === "ar" ? "flex-row-reverse" : ""}`}>
-          {categories.map((category) => (
+          {skills.map((skill) => (
             <button
-              key={category.id}
-              onClick={() => setActiveCategory(category.id)}
-              className={`category-pill ${activeCategory === category.id ? "active" : ""}`}
+              key={skill.id}
+              onClick={() => setActiveCategory(skill.id)}
+              className={`px-4 py-2 rounded-full text-sm font-medium transition-colors ${
+                activeCategory === skill.id 
+                  ? "bg-primary text-white" 
+                  : "bg-white text-gray-600 hover:bg-gray-100"
+              } ${language === "ar" ? "flex-row-reverse" : ""}`}
             >
-              {category.name}
+              {skill.name}
             </button>
           ))}
         </div>
