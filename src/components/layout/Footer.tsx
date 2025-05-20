@@ -3,7 +3,7 @@
 import Link from "next/link";
 import { Logo } from "../Logo";
 
-export function Footer() {
+export default function Footer() {
   const year = new Date().getFullYear();
 
   const quickLinks = [
@@ -24,6 +24,8 @@ export function Footer() {
             </div>
             <p className="text-gray-600 mb-6 max-w-md">
               NachhilfeLight is the leading platform for online education, offering hundreds of courses in various subjects to help you grow professionally and personally.
+            </p>
+            <div className="flex space-x-4">
               <Link href="#" className="text-gray-500 hover:text-primary transition-colors">
                 <span className="sr-only">Facebook</span>
                 <svg className="h-6 w-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
@@ -66,7 +68,7 @@ export function Footer() {
             </p>
             <div className="flex space-x-6">
               <Link href="/impressum" className="text-sm text-gray-500 hover:text-primary transition-colors">
- Policy
+                Policy
               </Link>
               <Link href="/privacy" className="text-sm text-gray-500 hover:text-primary transition-colors">
                 Privacy Policy
