@@ -10,13 +10,13 @@ import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { z } from "zod";
 import { useForm, ControllerRenderProps } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
-import { 
-  Form, 
-  FormControl, 
-  FormField, 
-  FormItem, 
-  FormLabel, 
-  FormMessage 
+import {
+  Form,
+  FormControl,
+  FormField,
+  FormItem,
+  FormLabel,
+  FormMessage
 } from "@/components/ui/form";
 import { Search } from "lucide-react";
 
@@ -76,24 +76,46 @@ export default function Contact() {
   // Handle submissions
   const onMentorSubmit = async (data: MentorFormValues) => {
     setIsSubmitting(true);
-    // Simulate API call
-    await new Promise(resolve => setTimeout(resolve, 1500));
-    console.log("Mentor application submitted:", data);
-    setIsSubmitting(false);
-    setIsSuccess(true);
-    setTimeout(() => setIsSuccess(false), 3000);
-    mentorForm.reset();
+    try {
+      const response = await fetch('/api/contact', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ type: 'mentor', data }),
+      });
+      if (response.ok) {
+        setIsSuccess(true);
+        setTimeout(() => setIsSuccess(false), 3000);
+        mentorForm.reset();
+      } else {
+        console.error('Failed to send mentor application');
+      }
+    } catch (error) {
+      console.error('Error submitting form:', error);
+    } finally {
+      setIsSubmitting(false);
+    }
   };
 
   const onStudentSubmit = async (data: StudentFormValues) => {
     setIsSubmitting(true);
-    // Simulate API call
-    await new Promise(resolve => setTimeout(resolve, 1500));
-    console.log("Student application submitted:", data);
-    setIsSubmitting(false);
-    setIsSuccess(true);
-    setTimeout(() => setIsSuccess(false), 3000);
-    studentForm.reset();
+    try {
+      const response = await fetch('/api/contact', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ type: 'student', data }),
+      });
+      if (response.ok) {
+        setIsSuccess(true);
+        setTimeout(() => setIsSuccess(false), 3000);
+        studentForm.reset();
+      } else {
+        console.error('Failed to send student application');
+      }
+    } catch (error) {
+      console.error('Error submitting form:', error);
+    } finally {
+      setIsSubmitting(false);
+    }
   };
 
   // Translations
@@ -126,7 +148,7 @@ export default function Contact() {
       name: "Full Name",
       namePlaceholder: "Enter your full name",
       email: "Email Address",
-      emailPlaceholder: "Enter your email address", 
+      emailPlaceholder: "Enter your email address",
       phone: "Phone Number",
       phonePlaceholder: "Enter your phone number",
       specialization: "Specialization",
@@ -164,21 +186,21 @@ export default function Contact() {
             <p className="text-lg text-gray-600">{translations.subtitle}</p>
           </div>
 
-          <Tabs 
-            defaultValue="student" 
-            value={activeTab} 
+          <Tabs
+            defaultValue="student"
+            value={activeTab}
             onValueChange={setActiveTab}
             className="w-full"
           >
             <TabsList className="grid w-full grid-cols-2 mb-10">
-              <TabsTrigger 
-                value="student" 
+              <TabsTrigger
+                value="student"
                 className="data-[state=active]:bg-primary data-[state=active]:text-white transition-all hover:bg-gray-100"
               >
                 {translations.student.tab}
               </TabsTrigger>
-              <TabsTrigger 
-                value="mentor" 
+              <TabsTrigger
+                value="mentor"
                 className="data-[state=active]:bg-primary data-[state=active]:text-white transition-all hover:bg-gray-100"
               >
                 {translations.mentor.tab}
@@ -202,9 +224,9 @@ export default function Contact() {
                           <FormItem>
                             <FormLabel>{translations.student.name}</FormLabel>
                             <FormControl>
-                              <Input 
-                                placeholder={translations.student.namePlaceholder} 
-                                {...field} 
+                              <Input
+                                placeholder={translations.student.namePlaceholder}
+                                {...field}
                               />
                             </FormControl>
                             <FormMessage />
@@ -218,10 +240,10 @@ export default function Contact() {
                           <FormItem>
                             <FormLabel>{translations.student.email}</FormLabel>
                             <FormControl>
-                              <Input 
-                                placeholder={translations.student.emailPlaceholder} 
+                              <Input
+                                placeholder={translations.student.emailPlaceholder}
                                 type="email"
-                                {...field} 
+                                {...field}
                               />
                             </FormControl>
                             <FormMessage />
@@ -235,9 +257,9 @@ export default function Contact() {
                           <FormItem>
                             <FormLabel>{translations.student.phone}</FormLabel>
                             <FormControl>
-                              <Input 
-                                placeholder={translations.student.phonePlaceholder} 
-                                {...field} 
+                              <Input
+                                placeholder={translations.student.phonePlaceholder}
+                                {...field}
                               />
                             </FormControl>
                             <FormMessage />
@@ -251,9 +273,9 @@ export default function Contact() {
                           <FormItem>
                             <FormLabel>{translations.student.subject}</FormLabel>
                             <FormControl>
-                              <Input 
-                                placeholder={translations.student.subjectPlaceholder} 
-                                {...field} 
+                              <Input
+                                placeholder={translations.student.subjectPlaceholder}
+                                {...field}
                               />
                             </FormControl>
                             <FormMessage />
@@ -285,7 +307,7 @@ export default function Contact() {
                         )}
                       />
                     </div>
-                    
+
                     <FormField
                       control={studentForm.control}
                       name="message"
@@ -293,10 +315,10 @@ export default function Contact() {
                         <FormItem>
                           <FormLabel>{translations.student.message}</FormLabel>
                           <FormControl>
-                            <Textarea 
-                              placeholder={translations.student.messagePlaceholder} 
+                            <Textarea
+                              placeholder={translations.student.messagePlaceholder}
                               rows={5}
-                              {...field} 
+                              {...field}
                             />
                           </FormControl>
                           <FormMessage />
@@ -308,8 +330,8 @@ export default function Contact() {
                       {isSuccess && activeTab === "student" && (
                         <p className="text-green-600 mr-4">{translations.student.success}</p>
                       )}
-                      <Button 
-                        type="submit" 
+                      <Button
+                        type="submit"
                         disabled={isSubmitting}
                         className="bg-accent hover:bg-accent/90 text-primary font-medium px-8 rounded-full cursor-pointer hover:scale-105 transition-all"
                       >
@@ -338,9 +360,9 @@ export default function Contact() {
                           <FormItem>
                             <FormLabel>{translations.mentor.name}</FormLabel>
                             <FormControl>
-                              <Input 
-                                placeholder={translations.mentor.namePlaceholder} 
-                                {...field} 
+                              <Input
+                                placeholder={translations.mentor.namePlaceholder}
+                                {...field}
                               />
                             </FormControl>
                             <FormMessage />
@@ -354,10 +376,10 @@ export default function Contact() {
                           <FormItem>
                             <FormLabel>{translations.mentor.email}</FormLabel>
                             <FormControl>
-                              <Input 
-                                placeholder={translations.mentor.emailPlaceholder} 
+                              <Input
+                                placeholder={translations.mentor.emailPlaceholder}
                                 type="email"
-                                {...field} 
+                                {...field}
                               />
                             </FormControl>
                             <FormMessage />
@@ -371,9 +393,9 @@ export default function Contact() {
                           <FormItem>
                             <FormLabel>{translations.mentor.phone}</FormLabel>
                             <FormControl>
-                              <Input 
-                                placeholder={translations.mentor.phonePlaceholder} 
-                                {...field} 
+                              <Input
+                                placeholder={translations.mentor.phonePlaceholder}
+                                {...field}
                               />
                             </FormControl>
                             <FormMessage />
@@ -387,9 +409,9 @@ export default function Contact() {
                           <FormItem>
                             <FormLabel>{translations.mentor.specialization}</FormLabel>
                             <FormControl>
-                              <Input 
-                                placeholder={translations.mentor.specializationPlaceholder} 
-                                {...field} 
+                              <Input
+                                placeholder={translations.mentor.specializationPlaceholder}
+                                {...field}
                               />
                             </FormControl>
                             <FormMessage />
@@ -397,7 +419,7 @@ export default function Contact() {
                         )}
                       />
                     </div>
-                    
+
                     <FormField
                       control={mentorForm.control}
                       name="experience"
@@ -405,17 +427,17 @@ export default function Contact() {
                         <FormItem>
                           <FormLabel>{translations.mentor.experience}</FormLabel>
                           <FormControl>
-                            <Textarea 
-                              placeholder={translations.mentor.experiencePlaceholder} 
+                            <Textarea
+                              placeholder={translations.mentor.experiencePlaceholder}
                               rows={4}
-                              {...field} 
+                              {...field}
                             />
                           </FormControl>
                           <FormMessage />
                         </FormItem>
                       )}
                     />
-                    
+
                     <FormField
                       control={mentorForm.control}
                       name="motivation"
@@ -423,10 +445,10 @@ export default function Contact() {
                         <FormItem>
                           <FormLabel>{translations.mentor.motivation}</FormLabel>
                           <FormControl>
-                            <Textarea 
-                              placeholder={translations.mentor.motivationPlaceholder} 
+                            <Textarea
+                              placeholder={translations.mentor.motivationPlaceholder}
                               rows={4}
-                              {...field} 
+                              {...field}
                             />
                           </FormControl>
                           <FormMessage />
@@ -438,8 +460,8 @@ export default function Contact() {
                       {isSuccess && activeTab === "mentor" && (
                         <p className="text-green-600 mr-4">{translations.mentor.success}</p>
                       )}
-                      <Button 
-                        type="submit" 
+                      <Button
+                        type="submit"
                         disabled={isSubmitting}
                         className="bg-accent hover:bg-accent/90 text-primary font-medium px-8 rounded-full cursor-pointer hover:scale-105 transition-all"
                       >
