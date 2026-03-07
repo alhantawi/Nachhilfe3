@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import "./globals.css";
-import ClientBody from "./ClientBody";
 import { LanguageProvider } from "@/context/LanguageContext";
+import CookieBanner from "@/components/CookieBanner";
 import { Poppins, Cairo, Geist } from "next/font/google";
 
 const geist = Geist({
@@ -42,6 +42,7 @@ export default function RootLayout({
       <body className="antialiased">
         <LanguageProvider>
           {children}
+          <CookieBanner />
         </LanguageProvider>
       </body>
     </html>

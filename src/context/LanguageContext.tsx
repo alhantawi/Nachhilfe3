@@ -71,6 +71,22 @@ const translations = {
     "footer.terms": "Terms of Service",
     "footer.privacy": "Privacy Policy",
     "footer.cookies": "Cookie Policy",
+
+    // Cookie Banner
+    "cookie.banner.title": "We use cookies 🍪",
+    "cookie.banner.description": "We use cookies to improve your experience, analyze traffic, and personalize content. You can manage your preferences below.",
+    "cookie.banner.acceptAll": "Accept All",
+    "cookie.banner.rejectNonEssential": "Reject Non-Essential",
+    "cookie.banner.managePreferences": "Manage Preferences",
+    "cookie.banner.savePreferences": "Save Preferences",
+    "cookie.banner.necessary": "Necessary",
+    "cookie.banner.necessary.description": "Required for the website to function properly. Cannot be disabled.",
+    "cookie.banner.analytics": "Analytics",
+    "cookie.banner.analytics.description": "Help us understand how visitors interact with the website.",
+    "cookie.banner.marketing": "Marketing",
+    "cookie.banner.marketing.description": "Used to deliver personalized advertisements and track campaigns.",
+    "cookie.banner.learnMore": "Learn More",
+    "cookie.settings.button": "Cookie Settings",
   },
   ar: {
     // Common
@@ -132,6 +148,22 @@ const translations = {
     "footer.terms": "شروط الخدمة",
     "footer.privacy": "سياسة الخصوصية",
     "footer.cookies": "سياسة ملفات تعريف الارتباط",
+
+    // Cookie Banner
+    "cookie.banner.title": "نستخدم ملفات تعريف الارتباط 🍪",
+    "cookie.banner.description": "نستخدم ملفات تعريف الارتباط لتحسين تجربتك وتحليل حركة المرور وتخصيص المحتوى. يمكنك إدارة تفضيلاتك أدناه.",
+    "cookie.banner.acceptAll": "قبول الكل",
+    "cookie.banner.rejectNonEssential": "رفض غير الضروري",
+    "cookie.banner.managePreferences": "إدارة التفضيلات",
+    "cookie.banner.savePreferences": "حفظ التفضيلات",
+    "cookie.banner.necessary": "ضروري",
+    "cookie.banner.necessary.description": "مطلوب لعمل الموقع بشكل صحيح. لا يمكن تعطيله.",
+    "cookie.banner.analytics": "التحليلات",
+    "cookie.banner.analytics.description": "يساعدنا على فهم كيفية تفاعل الزوار مع الموقع.",
+    "cookie.banner.marketing": "التسويق",
+    "cookie.banner.marketing.description": "يُستخدم لتقديم إعلانات مخصصة وتتبع الحملات.",
+    "cookie.banner.learnMore": "معرفة المزيد",
+    "cookie.settings.button": "إعدادات ملفات تعريف الارتباط",
   },
   de: {
     // Common عدل بعد هذا السطر مشن اللغة الالمانية
@@ -193,6 +225,22 @@ const translations = {
     "footer.terms": "Nutzungsbedingungen",
     "footer.privacy": "Datenschutzrichtlinie",
     "footer.cookies": "Cookie-Richtlinie",
+
+    // Cookie Banner
+    "cookie.banner.title": "Wir verwenden Cookies 🍪",
+    "cookie.banner.description": "Wir verwenden Cookies, um Ihre Erfahrung zu verbessern, den Datenverkehr zu analysieren und Inhalte zu personalisieren. Sie können Ihre Einstellungen unten verwalten.",
+    "cookie.banner.acceptAll": "Alle akzeptieren",
+    "cookie.banner.rejectNonEssential": "Nicht-Notwendige ablehnen",
+    "cookie.banner.managePreferences": "Einstellungen verwalten",
+    "cookie.banner.savePreferences": "Einstellungen speichern",
+    "cookie.banner.necessary": "Notwendig",
+    "cookie.banner.necessary.description": "Erforderlich für den ordnungsgemäßen Betrieb der Website. Kann nicht deaktiviert werden.",
+    "cookie.banner.analytics": "Analyse",
+    "cookie.banner.analytics.description": "Helfen uns zu verstehen, wie Besucher mit der Website interagieren.",
+    "cookie.banner.marketing": "Marketing",
+    "cookie.banner.marketing.description": "Wird verwendet, um personalisierte Werbung zu schalten und Kampagnen zu verfolgen.",
+    "cookie.banner.learnMore": "Mehr erfahren",
+    "cookie.settings.button": "Cookie-Einstellungen",
   }
 };
 
