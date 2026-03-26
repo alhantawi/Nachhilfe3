@@ -1,5 +1,4 @@
-// Centralized domain – replace with your real domain before going live
-export const SITE_DOMAIN = "https://nachhilfe-light.de";
+export const SITE_DOMAIN = "https://www.nachhilfelight.de";
 
 export type EmploymentType =
   | "FULL_TIME"
@@ -32,7 +31,7 @@ export type Job = {
   locations: JobLocation[];
   isRemote?: boolean;
   applicantLocationRequirements?: string; // e.g. "Germany"
-  whatsappNumber: string; // international format without +, e.g. "4915112345678"
+  whatsappNumber: string; // international format without +, e.g. "491741545975"
   whatsappMessage: string;
 };
 
@@ -96,7 +95,7 @@ export const jobs: Job[] = [
       { addressLocality: "Hannover", addressCountry: "DE" },
     ],
     applicantLocationRequirements: "Germany",
-    whatsappNumber: "4915112345678", // TODO: replace with real WhatsApp number
+    whatsappNumber: "491741545975",
     whatsappMessage:
       "Hallo, ich möchte mich als Nachhilfelehrer Deutsch bewerben.",
   },
