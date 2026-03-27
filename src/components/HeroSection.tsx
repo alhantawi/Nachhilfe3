@@ -1,26 +1,25 @@
 "use client";
 
 import Link from "next/link";
-import { Search } from "lucide-react";
+import { ArrowRight } from "lucide-react";
 
 import { useLanguage } from "@/context/LanguageContext";
 
 import { Button } from "./ui/button";
-import { Input } from "./ui/input";
 import Image from "next/image";
 
 export default function HeroSection() {
   const { t, language } = useLanguage();
 
   return (
-    <section className="relative w-full overflow-hidden bg-primary py-24">
+    <section className="relative w-full overflow-hidden bg-primary min-h-[85vh] flex items-center py-24">
       {/* Modern geometric patterns */}
-      <div className="absolute inset-0 overflow-hidden">
-        {/* Diagonal gradient flow */}
-        <div className="absolute top-0 left-0 h-[500px] w-[500px] bg-accent/20 rounded-full blur-3xl animate-pulse" />
-        <div className="absolute bottom-0 right-0 h-[500px] w-[500px] bg-accent/20 rounded-full blur-3xl animate-pulse delay-1000" />
+      <div className="absolute inset-0 overflow-hidden pointer-events-none">
+        {/* Softened gradient blobs */}
+        <div className="absolute -top-32 -left-32 h-[600px] w-[600px] bg-accent/15 rounded-full blur-[100px] animate-pulse" />
+        <div className="absolute bottom-0 right-0 h-[600px] w-[600px] bg-accent/10 rounded-full blur-[120px] animate-pulse delay-1000" />
 
-        {/* Top-left to bottom-right geometric shapes */}
+        {/* Floating geometric shapes */}
         <div className="absolute top-[10%] left-[10%] h-40 w-40 border-4 border-accent/30 rounded-lg rotate-45 animate-float" />
         <div className="absolute top-[25%] left-[25%] h-32 w-32 bg-accent/20 rounded-full animate-float delay-300" />
         <div className="absolute top-[40%] left-[40%] h-24 w-24 border-2 border-white/20 rounded-lg rotate-12 animate-float delay-600" />
@@ -28,8 +27,8 @@ export default function HeroSection() {
         <div className="absolute top-[70%] left-[70%] h-24 w-24 bg-accent/20 rounded-full animate-float delay-500" />
         <div className="absolute top-[85%] left-[85%] h-16 w-16 border-2 border-white/20 rounded-lg rotate-12 animate-float delay-800" />
 
-        {/* Grid pattern */}
-        <div className="absolute inset-0 bg-[linear-gradient(to_right,#ffffff10_1px,transparent_1px),linear-gradient(to_bottom,#ffffff10_1px,transparent_1px)] bg-[size:4rem_4rem]" />
+        {/* Subtle grid texture */}
+        <div className="absolute inset-0 bg-[linear-gradient(to_right,#ffffff08_1px,transparent_1px),linear-gradient(to_bottom,#ffffff08_1px,transparent_1px)] bg-[size:3.5rem_3.5rem]" />
 
         {/* Diagonal floating dots */}
         <div className="absolute top-[15%] left-[15%] w-3 h-3 bg-accent/40 rounded-full animate-float" />
@@ -41,52 +40,40 @@ export default function HeroSection() {
       </div>
 
       {/* Content */}
-      <div className="container relative z-10">
+      <div className="container relative z-10 px-4 md:px-6">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           <div className={`max-w-xl mx-auto lg:mx-0 text-center lg:text-left ${language === "ar" ? "lg:order-2" : ""}`}>
-            <div className="inline-block px-4 py-1 bg-accent/20 backdrop-blur-sm rounded-full mb-5">
-              <span className="text-accent text-sm font-medium">NachhilfeLight - {t("nav.courses")}</span>
+            {/* Badge */}
+            <div className="inline-flex items-center rounded-full border border-accent/30 bg-accent/10 px-4 py-1.5 text-sm font-medium text-accent backdrop-blur-sm mb-6 transition-transform hover:scale-105 cursor-default">
+              <span className="flex h-2 w-2 rounded-full bg-accent mr-2 animate-pulse" />
+              {t("hero.badge")}
             </div>
 
-            <h1 className="text-4xl md:text-5xl xl:text-6xl font-bold text-white mb-6 leading-tight">
+            <h1 className="text-4xl md:text-5xl xl:text-6xl font-extrabold text-white mb-6 leading-[1.15] tracking-tight">
               {t("hero.title")}
             </h1>
 
-            <p className="text-white/80 text-lg md:text-xl mb-8 max-w-xl">
+            <p className="text-white/80 text-lg md:text-xl mb-8 max-w-xl leading-relaxed mx-auto lg:mx-0">
               {t("hero.subtitle")}
             </p>
 
-            {/* Search Bar */}
-            {/* <div className="relative flex w-full max-w-xl mb-8 rounded-full shadow-lg mx-auto lg:mx-0">
-              <Input
-                type="text"
-                placeholder={t("hero.search.placeholder")}
-                className="pl-5 pr-12 py-6 bg-white/10 backdrop-blur-md border-white/20 text-white placeholder:text-white/60 rounded-full w-full focus:ring-accent/50 focus:border-accent/50"
-              />
-              <Button 
-                size="icon" 
-                className="absolute right-1 top-1/2 -translate-y-1/2 bg-accent hover:bg-accent/90 text-primary rounded-full w-10 h-10"
-              >
-                <Search size={18} />
-              </Button>
-            </div> */}
-
             <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
-              <Link href="https://wa.me/+4917684711406" target="_blank" rel="noopener noreferrer">
+              <Link href="https://wa.me/+4917684711406" target="_blank" rel="noopener noreferrer" className="w-full sm:w-auto">
                 <Button
                   variant="default"
                   size="lg"
-                  className="bg-accent/80 font-bold hover:bg-accent text-black tracking-wide font-bold px-8 rounded-full cursor-pointer hover:scale-105 transition-all"
+                  className="w-full bg-accent font-bold hover:bg-accent/90 text-black tracking-wide px-8 rounded-full cursor-pointer hover:scale-105 transition-all duration-300 shadow-[0_0_20px_rgba(255,235,0,0.4)] hover:shadow-[0_0_35px_rgba(255,235,0,0.6)] hover:-translate-y-1 flex items-center justify-center gap-2"
                 >
                   {t("cta.start")}
+                  <ArrowRight className="w-4 h-4" />
                 </Button>
               </Link>
 
-              <Link href="mailto:alhantawi@nachhilfelight.de?subject=Anfrage Nachhilfe">
+              <Link href="mailto:alhantawi@nachhilfelight.de?subject=Anfrage Nachhilfe" className="w-full sm:w-auto">
                 <Button
                   variant="outline"
                   size="lg"
-                  className="font-bold border-white/30 text-black hover:text-white cursor-pointer hover:text-black hover:bg-cyan-200 rounded-full"
+                  className="w-full font-bold border-white/30 text-black hover:text-white cursor-pointer hover:bg-white/10 rounded-full transition-all duration-300 backdrop-blur-sm hover:-translate-y-1"
                 >
                   {t("cta.become")}
                 </Button>
@@ -99,9 +86,9 @@ export default function HeroSection() {
           </div>
 
           <div className={`relative h-full flex justify-center items-center ${language === "ar" ? "lg:order-1" : ""}`}>
-            <div className="absolute -z-10 w-80 h-80 bg-accent/20 rounded-full blur-3xl"></div>
+            <div className="absolute -z-10 w-80 h-80 bg-accent/20 rounded-full blur-3xl" />
 
-            <div className="relative bg-white/10 backdrop-blur-md rounded-2xl p-6 w-full max-w-md border border-white/20 shadow-xl transform transition-all hover:scale-[1.02] hover:shadow-2xl">
+            <div className="relative bg-white/10 backdrop-blur-md rounded-2xl p-6 w-full max-w-md border border-white/20 shadow-2xl transform transition-all duration-500 hover:scale-[1.02] hover:shadow-[0_25px_50px_rgba(0,0,0,0.3)]">
               <div className="absolute -top-4 -right-4 bg-accent text-primary font-bold px-4 py-2 rounded-lg shadow-lg">
                 <span className="animate-pulse text-black">55% OFF</span>
               </div>
@@ -153,6 +140,27 @@ export default function HeroSection() {
                     </svg>
                   </div>
                   <span className="text-white/70 text-xs">Certificate</span>
+                </div>
+              </div>
+
+              {/* Floating trust badges */}
+              <div className="absolute bottom-6 -left-5 z-20 bg-white p-3 rounded-xl shadow-xl border border-gray-100 animate-float">
+                <div className="flex items-center gap-2">
+                  <div className="w-9 h-9 rounded-full bg-green-100 flex items-center justify-center text-green-600 font-bold text-sm">A+</div>
+                  <div>
+                    <p className="text-xs font-bold text-gray-800">{t("hero.trust.grades")}</p>
+                    <p className="text-xs text-gray-500">{t("hero.trust.grades.sub")}</p>
+                  </div>
+                </div>
+              </div>
+
+              <div className="absolute top-10 -right-5 z-20 bg-white p-3 rounded-xl shadow-xl border border-gray-100 animate-float delay-300">
+                <div className="flex items-center gap-2">
+                  <div className="w-9 h-9 rounded-full bg-yellow-100 flex items-center justify-center text-yellow-600 font-bold text-sm">5★</div>
+                  <div>
+                    <p className="text-xs font-bold text-gray-800">{t("hero.trust.rating")}</p>
+                    <p className="text-xs text-gray-500">{t("hero.trust.rating.sub")}</p>
+                  </div>
                 </div>
               </div>
             </div>
