@@ -21,8 +21,14 @@ const translations = {
     "nav.login": "Log in",
     "nav.signup": "Sign up",
     "cta": "Get Started",
+    "nav.jobs": "Jobs",
 
     // Hero Section
+    "hero.badge": "New: Jobs & Careers with us",
+    "hero.trust.grades": "Better Grades",
+    "hero.trust.grades.sub": "In just 4 weeks",
+    "hero.trust.rating": "Top Rated",
+    "hero.trust.rating.sub": "By 500+ students",
     "hero.title": "Free school tutoring – trusted, clear, multilingual.",
     "hero.subtitle": "NachhilfeLight offers government-supported tutoring for students in math, languages, and science – online or in-person.",
     "hero.search.placeholder": "What do you want to learn today?",
@@ -82,8 +88,14 @@ const translations = {
     "nav.login": "تسجيل الدخول",
     "nav.signup": "التسجيل",
     "cta": "ابدأ التعلم",
+    "nav.jobs": "وظائف",
 
     // Hero Section
+    "hero.badge": "جديد: الوظائف والمسيرة المهنية",
+    "hero.trust.grades": "درجات أفضل",
+    "hero.trust.grades.sub": "في 4 أسابيع فقط",
+    "hero.trust.rating": "الأعلى تقييماً",
+    "hero.trust.rating.sub": "من قبل 500+ طالب",
     "hero.title": "هل طفلك بحاجة إلى دعم دراسي و دروس اضافية و خصوصية؟",
     "hero.subtitle": "نحن نقدم Nachhilfe مجانية 100٪ للطلاب المؤهلين من خلال برنامج الدعم الحكومي Bildung und Teilhabe (BuT).",
     "hero.search.placeholder": "ماذا تريد أن تتعلم اليوم؟",
@@ -143,8 +155,14 @@ const translations = {
     "nav.login": "Anmelden",
     "nav.signup": "Registrieren",
     "cta": "Loslegen",
+    "nav.jobs": "Jobs",
 
     // Hero Section
+    "hero.badge": "Neu: Jobs & Karriere bei uns",
+    "hero.trust.grades": "Bessere Noten",
+    "hero.trust.grades.sub": "In nur 4 Wochen",
+    "hero.trust.rating": "Top Bewertet",
+    "hero.trust.rating.sub": "Von 500+ Schülern",
     "hero.subtitle": "  Individuelle Lernförderung in Mathe, Deutsch, Englisch & mehr – mehrsprachig, zuverlässig, 100 % kostenlos mit Förderung. ",
     "hero.title": "Willkommen bei NachhilfeLight – kostenlose Nachhilfe für Schüler!",
     "hero.search.placeholder": "Was möchtest du heute lernen?",
